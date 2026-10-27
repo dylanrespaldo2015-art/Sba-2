@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="45%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+    <linearGradient id="islandGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="furGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+    <linearGradient id="snoutGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <linearGradient id="backpackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="honeyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Sky Canvas Background with rounded corners -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Floating Island Base -->
+  <g filter="url(#shadow)">
+    <!-- Grass top -->
+    <ellipse cx="256" cy="420" rx="180" ry="48" fill="url(#islandGrad)" />
+    <!-- Dirt cliff base -->
+    <path d="M 80 420 Q 256 460 432 420 L 400 460 Q 256 500 112 460 Z" fill="#78350f" opacity="0.8" />
+  </g>
+
+  <!-- Character / Bear Group -->
+  <g filter="url(#shadow)">
+    <!-- Blue Backpack visible behind bear -->
+    <rect x="180" y="210" width="152" height="130" rx="36" fill="url(#backpackGrad)" stroke="#1d4ed8" stroke-width="6" />
+    <rect x="210" y="196" width="92" height="26" rx="12" fill="#93c5fd" />
+
+    <!-- Bear Ears -->
+    <!-- Left ear -->
+    <circle cx="168" cy="148" r="42" fill="url(#furGrad)" stroke="#451a03" stroke-width="6" />
+    <circle cx="168" cy="148" r="22" fill="#fde68a" />
+    <!-- Right ear -->
+    <circle cx="344" cy="148" r="42" fill="url(#furGrad)" stroke="#451a03" stroke-width="6" />
+    <circle cx="344" cy="148" r="22" fill="#fde68a" />
+
+    <!-- Bear Head -->
+    <rect x="144" y="130" width="224" height="200" rx="60" fill="url(#furGrad)" stroke="#451a03" stroke-width="7" />
+
+    <!-- Cheeks & Snout -->
+    <rect x="184" y="222" width="144" height="92" rx="38" fill="url(#snoutGrad)" stroke="#b45309" stroke-width="4" />
+    <!-- Nose -->
+    <ellipse cx="256" cy="248" rx="22" ry="15" fill="#1e1b4b" />
+    <!-- Mouth -->
+    <path d="M 240 272 Q 256 284 272 272" stroke="#451a03" stroke-width="6" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes (Cute Shine) -->
+    <!-- Left Eye -->
+    <circle cx="206" cy="192" r="15" fill="#1e1b4b" />
+    <circle cx="202" cy="188" r="5" fill="#ffffff" />
+    <!-- Right Eye -->
+    <circle cx="306" cy="192" r="15" fill="#1e1b4b" />
+    <circle cx="302" cy="188" r="5" fill="#ffffff" />
+
+    <!-- Bear Paws (holding golden honey jar) -->
+    <!-- Golden Honey Jar -->
+    <g transform="translate(320, 270)">
+      <rect x="0" y="18" width="68" height="74" rx="20" fill="url(#honeyGrad)" stroke="#78350f" stroke-width="5" />
+      <rect x="8" y="6" width="52" height="16" rx="6" fill="#fef3c7" stroke="#78350f" stroke-width="4" />
+      <text x="34" y="62" font-family="sans-serif" font-weight="900" font-size="28" text-anchor="middle" fill="#78350f">🍯</text>
+    </g>
+
+    <!-- Front Paws -->
+    <ellipse cx="180" cy="320" rx="30" ry="22" fill="#92400e" stroke="#451a03" stroke-width="5" />
+    <ellipse cx="330" cy="320" rx="30" ry="22" fill="#92400e" stroke="#451a03" stroke-width="5" />
+  </g>
+
+  <!-- Sparkles / Adventure Stars -->
+  <path d="M 100 120 L 105 135 L 120 140 L 105 145 L 100 160 L 95 145 L 80 140 L 95 135 Z" fill="#fde047" />
+  <path d="M 400 90 L 404 102 L 416 106 L 404 110 L 400 122 L 396 110 L 384 106 L 396 102 Z" fill="#fde047" />
+</svg>

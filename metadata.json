@@ -1,0 +1,8 @@
+{
+  "name": "Remix Oso Aventuras 3D: Plataformas",
+  "description": "Juego de plataformas en 3D con el carismático oso voxel de mochila azul. Salta, haz doble salto, planea, gira y recoge tarros de miel por mundos flotantes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
